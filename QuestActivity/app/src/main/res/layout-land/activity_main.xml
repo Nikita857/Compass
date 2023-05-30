@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#202020"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="405dp"
+        android:layout_height="378dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:padding="24dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#6E6E6E"
+            android:text="назад"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#6E6E6E"
+            android:text="вперед"
+            tools:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="157dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#6E6E6E"
+                android:text="Нет"
+                tools:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6E6E6E"
+                android:text="Да"
+                tools:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deceit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="38dp"
+            android:gravity="center"
+            android:text="@string/deceit_button" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
